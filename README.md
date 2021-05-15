@@ -1,2 +1,2 @@
 # HTML
-Contains the HTML code of shown in outube channel 
+Contains the HTML code of shown in youtube channel 
