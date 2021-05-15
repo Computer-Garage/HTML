@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="sample2.html" method="GET">
+        <pre>
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="username">Username : </label><input type="text" id="username" required pattern="[A-Z]{5}" placeholder="5 UPPERCASES ONLY">
+            
+            Password : <input type="password" required placeholder="Password">
+
+            <input type="button" value="Button"> <input type="submit" value="Submit"> <input type="reset" value="Reset">
+        </fieldset>
+        </pre>
+    </form>
+    <div>
+        <input type="email" id="email">
+        <input type="tel" id="tel">
+        <input type="url" id="url">
+        <input type="search" id="search">
+        <input type="number" id="number" min="0" max="5"><br><br>
+        <input type="date">
+        <input type="time">
+        <input type="week">
+        <input type="month">
+        <input type="datetime-local"><br><br>
+        <input type="color" id="color">
+        <input type="range" id="range" min="20" max="80" value="50" id="range" oninput="email.value = range.value">
+        <input type="file" id="file"><br><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="checkbox" name="" id="">Pizza <br>
+        <input type="checkbox" name="" id="">Burger <br>
+        <input type="checkbox" name="" id="">Coke <br>
+        <input type="checkbox" name="" id="">Lime <br><br>
+        <input type="radio" name="gender" id="">Male <br>
+        <input type="radio" name="gender" id="">Female <br>
+        input
+    </div>
+</body>
+</html>
