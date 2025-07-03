@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #000;
+        padding: 0%;
+        margin: 0%;
+        font-size: 30px;
+    }
+
+    .neon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0%;
+        padding: 0%;
+        color: #fff;
+        text-shadow: 0 0 20px red;
+    }
+
+    .neon::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        padding: 0%;
+        z-index: -1;
+        color: red;
+        filter: blur(15px);
+    }
+
+    .neon::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0%;
+        z-index: -2;
+        background: white;
+        opacity: .5;
+        filter: blur(100px);
+    }
+</style>
+
+<body>
+    <h1 class="neon" data-text="Welcome to My Page">Welcome to My Page</h1>
+</body>
+
+</html>
